@@ -1,0 +1,2 @@
+# vinta
+GitHub Pages
