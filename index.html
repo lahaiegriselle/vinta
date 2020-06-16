@@ -11,13 +11,14 @@
   
   
   <title>Home</title>
+  <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.css">
   <link rel="stylesheet" href="assets/web/assets/mobirise-icons2/mobirise2.css">
   <link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css">
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
-  <link rel="stylesheet" href="assets/tether/tether.min.css">
   <link rel="stylesheet" href="assets/dropdown/css/style.css">
+  <link rel="stylesheet" href="assets/tether/tether.min.css">
   <link rel="stylesheet" href="assets/theme/css/style.css">
   <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
   
@@ -119,6 +120,71 @@
       </div>
     </div>
     
+</section>
+
+<section class="mbr-section header slider_with_text_button cid-01WMO4Sm2k" id="design-block-01WMO4Sm2k">
+
+     
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<div id="myCarousel" class="carousel slide" data-ride="carousel">
+				<!-- Wrapper for carousel items -->
+				<div class="carousel-inner">
+					<div class="item carousel-item active">
+						<img src="https://cdn.pixabay.com/photo/2014/08/01/15/51/manhattan-407703_960_720.jpg" alt="">
+						<div class="carousel-caption">
+							<h3>Amazing Digital Experience</h3>
+							<p>Pulvinar leo id risus pellentesque vestibulum. Sed diam libero, sodales eget sapien bibendum.</p>
+						</div>
+					</div>	
+					<div class="item carousel-item">
+						<img src="https://cdn.pixabay.com/photo/2020/05/26/09/01/night-5222267__340.jpg" alt="">
+						<div class="carousel-caption">
+							<h3>Live Monitoring Tools</h3>							
+							<p>Nullam hendrerit justo non leo aliquet imperdiet. Etiam sagittis lectus condime dapibus vitae.</p>
+						</div>
+					</div>
+					
+					
+				</div>
+				<!-- End Carousel Inner -->
+				<ul class="nav nav-pills nav-justified">
+					<li data-target="#myCarousel" data-slide-to="0" class="nav-item"><a href="#" class="nav-link"><strong>About</strong>Lorem ipsum dolor sit amet</a></li>
+					<li data-target="#myCarousel" data-slide-to="1" class="nav-item active"><a href="#" class="nav-link"><strong>Features</strong> Nesciunt stumpown odio aliqua</a></li>
+					
+					
+				</ul>
+              <!-- Carousel controls -->
+				<a class="carousel-control left carousel-control-prev" href="#myCarousel" data-slide="prev">
+					<i class="fa fa-angle-left"></i>
+				</a>
+				<a class="carousel-control right carousel-control-next" href="#myCarousel" data-slide="next">
+					<i class="fa fa-angle-right"></i>
+				</a>
+			</div>
+		</div>
+	</div>
+  </div>
+  <script type="text/javascript">
+	$(document).ready(function(){
+		// Highlight bottom nav links
+		var clickEvent = false;
+		$("#myCarousel").on("click", ".nav a", function(){
+			clickEvent = true;
+			$(this).parent().siblings().removeClass("active");
+			$(this).parent().addClass("active");		
+		}).on("slid.bs.carousel", function(e){
+			if(!clickEvent){
+				itemIndex = $(e.relatedTarget).index();
+				targetNavItem = $(".nav li[data-slide-to='" + itemIndex + "']");
+				$(".nav li").not(targetNavItem).removeClass("active");
+				targetNavItem.addClass("active");
+			}
+			clickEvent = false;
+		});
+	});
+</script>
 </section>
 
 <section class="cid-s1TGKdqJc4" id="extHeader4-2">
@@ -414,16 +480,16 @@
 </section>
 
 
-  <script src="assets/web/assets/jquery/jquery.min.js"></script>
   <script src="assets/popper/popper.min.js"></script>
+  <script src="assets/web/assets/jquery/jquery.min.js"></script>
   <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-  <script src="assets/tether/tether.min.js"></script>
   <script src="assets/web/assets/cookies-alert-plugin/cookies-alert-core.js"></script>
   <script src="assets/web/assets/cookies-alert-plugin/cookies-alert-script.js"></script>
-  <script src="assets/smoothscroll/smooth-scroll.js"></script>
   <script src="assets/dropdown/js/nav-dropdown.js"></script>
   <script src="assets/dropdown/js/navbar-dropdown.js"></script>
   <script src="assets/touchswipe/jquery.touch-swipe.min.js"></script>
+  <script src="assets/tether/tether.min.js"></script>
+  <script src="assets/smoothscroll/smooth-scroll.js"></script>
   <script src="assets/theme/js/script.js"></script>
   
   
